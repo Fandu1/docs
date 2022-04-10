@@ -1,5 +1,5 @@
 ---
-title: Streaming the audit log for your enterprise
+title: Transmitir las bitácoras de auditoría para las organizaciones de tu cuenta empresarial
 intro: 'Puedes trasmitir datos de eventos de Git y de auditorías desde {% data variables.product.prodname_dotcom %} hacia un sistema externo de administración de datos.'
 miniTocMaxHeadingLevel: 3
 versions:
@@ -10,12 +10,26 @@ topics:
   - Enterprise
   - Logging
   - Organizations
-shortTitle: Stream audit logs
+shortTitle: Transmitir bitácoras de auditoría de la organización
 redirect_from:
   - /github/setting-up-and-managing-your-enterprise/managing-organizations-in-your-enterprise-account/streaming-the-audit-logs-for-organizations-in-your-enterprise-account
-  - /admin/user-management/managing-organizations-in-your-enterprise/streaming-the-audit-logs-for-organizations-in-your-enterprise-account
 permissions: Enterprise owners can configure audit log streaming.
 ---
+
+## Acerca de exportar los datos de auditoría
+
+Puedes extraer datos de bitácoras de auditoría y de eventos de git desde {% data variables.product.prodname_dotcom %} en varias formas:
+
+* Ve a la página de bitácoras de auditoría en {% data variables.product.prodname_dotcom %} y haz clic en **Exportar**. Para obtener más información, consulta las secciones "[Ver las bitácoras de auditoría para las organizaciones de tu cuenta empresarial](/github/setting-up-and-managing-your-enterprise/managing-organizations-in-your-enterprise-account/viewing-the-audit-logs-for-organizations-in-your-enterprise-account)" y "[Exportar la bitácora de auditoría](/organizations/keeping-your-organization-secure/reviewing-the-audit-log-for-your-organization#exporting-the-audit-log)".
+* Utiliza la API para encuestar por eventos nuevos de bitácoras de auditoría. Para obtener más información, consulta la sección "[Utilizar la API de bitácoras de auditoría](/organizations/keeping-your-organization-secure/reviewing-the-audit-log-for-your-organization#using-the-audit-log-api)".
+* Configurar {% data variables.product.product_name %} para transmitir datos de auditoría mientras se registran los eventos.
+
+Actualmente, la transmisión de bitácoras de auditoría es compatible con varios proveedores de almacenamiento.
+- Amazon S3
+- Almacenamiento de Blobs de Azure
+- Azure Event Hubs
+- Google Cloud Storage
+- Splunk
 
 ## Acerca de la transmisión de bitácoras de auditoría
 
@@ -26,7 +40,7 @@ Los beneficios de transmitir datos de auditoría incluyen:
 
 * **Exploración de datos**. Puedes examinar los eventos transmitidos utilizando tu herramienta preferida para consultar cantidades grandes de datos. La transmisión contiene tanto los eventos de auditoría como los de Git a lo largo de toda la cuenta empresarial.
 * **Continuidad de datos**. Puedes pausar la transmisión por hasta siete días sin perder datos de auditoría.
-* **Retención de datos**. You can keep your exported audit logs and Git events data as long as you need to.
+* **Retención de datos**. Puedes mantener tus datos de bitácoras de auditoría y de Git exportados conforme los necesites.
 
 Los propietrios de empresas pueden configurar, pausar o borrar una transmisión en cualquier momento. La transmisión exporta los datos de auditoría de todas las organizaciones en tu empresa.
 

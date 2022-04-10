@@ -6,7 +6,6 @@ redirect_from:
   - /enterprise/admin/installation/activity-dashboard
   - /enterprise/admin/user-management/activity-dashboard
   - /admin/user-management/activity-dashboard
-  - /admin/user-management/monitoring-activity-in-your-enterprise/activity-dashboard
 versions:
   ghes: '*'
   ghae: '*'

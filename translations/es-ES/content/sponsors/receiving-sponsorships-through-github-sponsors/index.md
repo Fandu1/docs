@@ -22,5 +22,6 @@ children:
   - /tax-information-for-github-sponsors
   - /disabling-your-github-sponsors-account
   - /unpublishing-your-github-sponsors-profile
+  - /sponsors-for-companies
 ---
 

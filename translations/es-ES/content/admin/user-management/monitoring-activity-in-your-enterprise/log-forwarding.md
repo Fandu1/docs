@@ -7,7 +7,6 @@ redirect_from:
   - /enterprise/admin/enterprise-management/log-forwarding
   - /admin/enterprise-management/log-forwarding
   - /admin/user-management/log-forwarding
-  - /admin/user-management/monitoring-activity-in-your-enterprise/log-forwarding
 versions:
   ghes: '*'
   ghae: '*'

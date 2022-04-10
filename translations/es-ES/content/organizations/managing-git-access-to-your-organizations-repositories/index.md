@@ -20,4 +20,3 @@ children:
 shortTitle: Administrar el acceso a Git
 ---
 
-{% data reusables.organizations.ssh-ca-ghec-only %}
